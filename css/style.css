@@ -2,7 +2,43 @@ footer {padding: 10px;
 
 }
 
-main section p {
-    background-color: brown;
-    font-size: 30px;
+
+
+
+.top {
+    background-color: burlywood;
+    font-size: 50px;
+    padding: 10px;
+    text-align: 20px;
+}
+
+.v {
+    background-color: #e7eaf6;
+}
+.m {
+    background-color: #a2a8d3 ;
+}
+.a {
+    background-color: #38598b;
+}
+.p{
+    background-color:#38598b;
+}
+.s {
+    background-color: #ffeedb;
+}
+.g {
+    background-color: #ffd8cc;
+}
+.c {
+    background-color:#ffbd9b ;
+}
+.r {
+    background-color:#cee5d0 ;
+}
+.t {
+    background-color: #f3f0d7;
+}
+.k {
+    background-color:#d8b384;
 }
