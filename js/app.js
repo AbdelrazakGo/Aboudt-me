@@ -1,5 +1,5 @@
 'use strict';
-
+var scors = 0;
 
 
 let userName = prompt("Hello May I please have your name?") 
@@ -15,6 +15,8 @@ let think = prompt('Do you think that I am a Robot [Yes or No]')
 if (think === 'yes' || think === 'y'){
     // console.log('correct answer');
         alert("Perfect , I am a robot with a highly percentage of Ai")
+        scors++
+
 } else if (think === 'no' || think === 'n'){
     alert(" sorry unfortunately I'm not ")
 } else { alert('It is a Yes No Game So plz follow the Rules')
@@ -27,6 +29,8 @@ let feelings = prompt('Do you think that I have feelings as a Robot  [Yes or No]
 if (feelings === 'yes' || feelings === 'y'){
     // console.log('correct answer');
         alert("You answered yes, although you are not convinced of it, but in fact we have feelings and desires to occupy humanity")
+        scors++
+
 } else if (feelings === 'no' || feelings === 'n'){
     alert("You are Wrong , Even Machines have feelings ")
 } else { alert('It is a Yes No Game So plz follow the Rules')
@@ -40,6 +44,8 @@ let human = prompt('Do you think that I wish to be a human like you! [Yes or No]
 if (human === 'yes' || human === 'y'){
     // console.log('correct answer');
         alert("good answer ! Since I entered the world of programming, I have turned into a robot, and I miss my days as a human being")
+        scors++
+
 } else if (human === 'no' || human === 'n'){
     alert(" Being a robot is not a good thing ")
 } else { alert('It is a Yes No Game So plz follow the Rules')
@@ -52,6 +58,8 @@ let friend = prompt('Do you think that I have friends?? [Yes or No]')
 if (friend === 'yes' || friend === 'y'){
     // console.log('correct answer');
         alert("definitely, and add to your info. that I love them too much")
+        scors++
+
 } else if (friend === 'no' || friend === 'n'){
     alert(" wrong answer nobody could be alive with having no friends  ")
 } else { alert('It is a Yes No Game So plz follow the Rules')
@@ -65,7 +73,79 @@ let married = prompt('Do you think Im Single [Yes or No]')
 if (married === 'yes' || married === 'y'){
     // console.log('correct answer');
         alert("Despite the fact that i'm old , yet I'm Single")
+        scors++
+
 } else if (married === 'no' || married === 'n'){
     alert(" to my bad I'm still single ")
 } else { alert('It is a Yes No Game So plz follow the Rules')
 }
+
+
+let Age ;
+var counter = 0;
+
+do {
+    
+    Age = prompt("Guess My Age");
+    if(Age > 30){
+        alert('Too hight');
+    }else if(Age < 30){
+        alert('Too low');
+    }else if(Age == 30){
+    alert('Good Job');
+    scors++
+    // console.log(Age +' is right the answer');
+    break;
+    
+    } 
+    
+  counter++;
+} while ( counter < 4);
+
+// alert ('Good Job')
+
+// let age = prompt('Guess My Age !')
+
+// for(var i=0;i<3;i++){
+
+// if(age == 30)
+// {
+//     alert('Good Job');
+//     break;
+
+// }
+// else if (age > 30){
+//     alert('Too Hight');
+//     age = prompt('Guess My Age !')
+
+// } 
+//   else if (age < 30){
+//     alert('Too Low');
+//     age = prompt('Guess My Age !');
+// }
+// }
+
+// if (age != 30){
+//     alert('My Age is 30')
+// }
+
+
+
+    
+//    alert(scors)
+
+let fav = ['pepsi','tea','nescafe','coffe'];
+
+for (var i=0;i<6;i++){
+let drink = prompt('Guess My Fav Drink !').toLowerCase();
+if(drink === fav[0] || drink === fav[1] ||drink === fav[2] ||drink === fav[3] ){
+    alert('Good shoot');
+    // console.log(Age +' is right the answer');
+
+    scors++
+    break;
+
+}
+}
+alert('My Fav  drinks are ' + fav)
+alert('Your scors are ' + scors + ' out of 7 ');
