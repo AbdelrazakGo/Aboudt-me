@@ -11,3 +11,12 @@
 - creat two guesses games
 - rearrange my info 
 - add styly to my web page
+
+### third day :
+- we worked in pair programing 
+
+Davigater: Abdelrazek elrabee
+
+Driver; Anas Abusaif
+
+- added new funcion to answer all questions
