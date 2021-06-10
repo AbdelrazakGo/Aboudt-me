@@ -80,77 +80,108 @@ alert("first we would like to play a Guessing Game Dont be worry it is a Yes No 
 // } else { alert('It is a Yes No Game So plz follow the Rules')
 // }
 
-function guissingGame (userInput)
-{
-  if (userInput=='y'|| userInput=='y'){
-    alert('you are correct :)');
+// function guissingGame (userInput)
+// {
+//   if (userInput=='yes'|| userInput=='y'){
+//     alert('you are correct :)');
+//     scors++;
+//   }else if (userInput=='no' || userInput=='n'){
+//     alert('you are mistaken :(')
+//   }else {alert('please enter (yes) or (y) or (no) or (n)')}
+// }
+// let think=prompt('Do you think that I am a Robot?');
+// guissingGame(think);
+
+// let feelings =prompt('Do you think that I have feelings as a Robot?');
+// guissingGame(feelings);
+
+// let human=prompt('Do you think that I wish to be a human like you?');
+// guissingGame(human);
+
+// let friend=prompt('Do you think that I have friends??');
+// guissingGame(friend);
+
+// let married=prompt('Do you think Im Single?');
+// guissingGame(married);
+
+
+function guss (quest , tru ,fls, wt){
+
+let answer ;
+do { answer = prompt(quest);
+  
+} while (answer != 'yes' && answer != 'no' && answer != 'y' && answer != 'n'); // != not !==
+if (answer == 'yes' || answer == 'y'){
+  if(wt == 1){
     scors++;
-  }else if (userInput=='no' || userInput=='n'){
-    alert('you are mistaken :(')
-  }else {alert('please enter (yes) or (y) or (no) or (n)')}
+  }
+  alert(tru);
+}else if (answer == 'no' || answer == 'n'){
+  if(wt != 1){
+    scors++;
+  }
+  alert(fls);
 }
-let think=prompt('Do you think that I am a Robot?');
-guissingGame(think);
+}
 
-let feelings =prompt('Do you think that I have feelings as a Robot?');
-guissingGame(feelings);
 
-let human=prompt('Do you think that I wish to be a human like you?');
-guissingGame(human);
+guss('Do you think that I am a Robot?','Perfect , I am a robot with a highly percentage of Ai','sorry unfortunately Im not', 1)
+guss('Do you think that I have feelings as a Robot?','You ve answered yes, although you are not convinced of it, but in fact we have feelings and desires to occupy humanity','You are Wrong , Even Machines have feelings',2)
+guss('Do you think that I wish to be a human like you?','Since I entered the world of programming, I have turned into a robot, and I miss my days as a human being','Being a robot is not a good thing',1)
+guss('Do you think that I have friends?','definitely, and add to your info. that I love them too much','wrong answer nobody could be alive with having no friends',1)
+guss('Do you think Im Single?','to my bad Im still single','Despite the fact that im old , yet Im Single',1)
 
-let friend=prompt('Do you think that I have friends??');
-guissingGame(friend);
 
-let married=prompt('Do you think Im Single?');
-guissingGame(married);
+// let Age ;
+// var counter = 0;
 
-let Age ;
-var counter = 0;
-
-do {
+// do {
     
-    Age = prompt("Guess My Age");
-    if(Age > 30){
-        alert('Too hight');
-    }else if(Age < 30){
-        alert('Too low');
-    }else if(Age == 30){
-    alert('Good Job');
-    scors++
-    // console.log(Age +' is right the answer');
-    break;
+//     Age = prompt("Guess My Age");
+//     if(Age > 30){
+//         alert('Too hight');
+//     }else if(Age < 30){
+//         alert('Too low');
+//     }else if(Age == 30){
+//     alert('Good Job');
+//     scors++
+//     // console.log(Age +' is right the answer');
+//     break;
     
-    } 
+//     } 
     
-  counter++;
-} while ( counter < 4);
+//   counter++;
+// } while ( counter < 4);
 
 // alert ('Good Job')
 
-// let age = prompt('Guess My Age !')
 
-// for(var i=0;i<3;i++){
 
-// if(age == 30)
-// {
-//     alert('Good Job');
-//     break;
 
-// }
-// else if (age > 30){
-//     alert('Too Hight');
-//     age = prompt('Guess My Age !')
+let age = prompt('Guess My Age !')
 
-// } 
-//   else if (age < 30){
-//     alert('Too Low');
-//     age = prompt('Guess My Age !');
-// }
-// }
+for(var i=0;i<3;i++){
 
-// if (age != 30){
-//     alert('My Age is 30')
-// }
+if(age == 30)
+{
+    alert('Good Job');
+    break;
+
+}
+else if (age > 30){
+    alert('Too Hight');
+    age = prompt('Guess My Age !')
+
+} 
+  else if (age < 30){
+    alert('Too Low');
+    age = prompt('Guess My Age !');
+}
+}
+
+if (age != 30){
+    alert('My Age is 30')
+}
 
 
 
